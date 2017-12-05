@@ -1,5 +1,13 @@
 # docker-golang
-Dockerized golang + tools
+Dockerized golang + tools for development purpose (and production)
+
+# How to use
+
+```
+docker run -it --rm hadigoh/golang
+```
+
+Mount volume and expose port as you need
 
 # Image Content
 

@@ -5,4 +5,4 @@ RUN go get -u -v \
     github.com/pilu/fresh \
     github.com/jstemmer/go-junit-report \
     github.com/golang/lint/golint \
-    github.com/radovskyb/watcher
+    github.com/radovskyb/watcher/...
