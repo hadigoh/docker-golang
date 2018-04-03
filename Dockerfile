@@ -9,9 +9,9 @@ RUN wget -O docker.tgz https://download.docker.com/linux/static/stable/x86_64/do
 # Download essential tools for development
 RUN go get -u -v \
     github.com/golang/dep/cmd/dep \
-    github.com/jteeuwen/go-bindata/... \
     github.com/oxequa/realize \
     github.com/vektra/mockery/... \
-    github.com/radovskyb/watcher/... \
     gopkg.in/alecthomas/gometalinter.v2 \
-    github.com/jstemmer/go-junit-report
+    github.com/jstemmer/go-junit-report \
+    github.com/motemen/gore \
+    github.com/gobuffalo/packr/...
