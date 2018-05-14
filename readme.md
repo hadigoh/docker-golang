@@ -1,5 +1,5 @@
 # docker-golang
-Dockerized golang + tools for development purpose (and production)
+Dockerized golang + tools for development purpose (and ci)
 
 # How to use
 
@@ -17,3 +17,8 @@ Mount volume and expose port as you need
 * github.com/jstemmer/go-junit-report
 * github.com/golang/lint/golint
 * github.com/radovskyb/watcher
+
+# Custom scripts
+
+* load-ssh.sh
+  This is used for loading `SSH_PRIVATE_KEY` from env variable into ~/.ssh/id_rsa
