@@ -7,13 +7,16 @@ RUN wget -O docker.tgz https://download.docker.com/linux/static/stable/x86_64/do
     rm -rf docker docker.tgz
 
 # Download essential tools for development
+RUN go get -u -v github.com/alecthomas/gometalinter && \
+    gometalinter --install
+
 RUN go get -u -v \
     github.com/golang/dep/cmd/dep \
-    github.com/oxequa/realize \
-    github.com/vektra/mockery/... \
-    gopkg.in/alecthomas/gometalinter.v2 \
-    github.com/jstemmer/go-junit-report \
-    github.com/motemen/gore \
     github.com/gobuffalo/packr/...
+
+RUN go get -u -v \
+    github.com/vektra/mockery/... \
+    github.com/oxequa/realize \
+    github.com/motemen/gore
 
 COPY ./scripts/* /usr/local/bin/
