@@ -20,3 +20,4 @@ RUN go get -u -v \
     github.com/motemen/gore
 
 COPY ./scripts/* /usr/local/bin/
+RUN chmod +x /usr/local/bin/*
