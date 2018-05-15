@@ -8,7 +8,7 @@ else
   mkdir -p ~/.ssh
   echo "$SSH_PRIVATE_KEY" > ~/.ssh/id_rsa
   echo "StrictHostKeyChecking no" >> /etc/ssh/ssh_config
-  chmod 0400 ~/.ssh
+  chmod 0400 ~/.ssh/id_rsa
 fi
 
 # Enables running this script as docker entrypoint
