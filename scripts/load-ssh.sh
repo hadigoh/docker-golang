@@ -1,5 +1,7 @@
 #! /bin/sh
 
+set -e
+
 if [ -f ~/.ssh/id_rsa ]; then 
   echo "There's an existing SSH key"
 elif [ -z "$SSH_PRIVATE_KEY" ]; then
