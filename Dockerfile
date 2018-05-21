@@ -21,3 +21,4 @@ RUN go get -u -v \
 
 COPY ./scripts/* /usr/local/bin/
 RUN chmod +x /usr/local/bin/*
+RUN git config --global url."git@gitlab.com:".insteadOf "https://gitlab.com/"
