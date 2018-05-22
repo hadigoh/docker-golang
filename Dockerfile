@@ -1,4 +1,4 @@
-FROM golang:1.10.2-alpine
+FROM golang:1.10.2
 
 # Download docker static binary to be able to do Docker out of Docker
 RUN wget -O docker.tgz https://download.docker.com/linux/static/stable/x86_64/docker-17.12.1-ce.tgz && \
