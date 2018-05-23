@@ -28,7 +28,9 @@ RUN go get -u -v \
     github.com/oxequa/realize \
     github.com/motemen/gore \
     github.com/mikefarah/yq \
-    github.com/hadigoh/git-lab
+    github.com/hadigoh/lab
+
+RUN echo alias git=lab >> ~/.profile
 
 COPY ./scripts/* /usr/local/bin/
 RUN chmod +x /usr/local/bin/*

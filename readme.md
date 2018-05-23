@@ -19,7 +19,7 @@ Mount volume and expose port as you need
 * github.com/oxequa/realize
 * github.com/motemen/gore
 * github.com/mikefarah/yq
-* github.com/hadigoh/git-lab
+* github.com/hadigoh/lab
 * protobuf compiler (protoc)
 * Docker client
 
