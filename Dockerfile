@@ -26,7 +26,9 @@ RUN go get -u -v \
 RUN go get -u -v \
     github.com/vektra/mockery/... \
     github.com/oxequa/realize \
-    github.com/motemen/gore
+    github.com/motemen/gore \
+    github.com/mikefarah/yq \
+    github.com/hadigoh/git-lab
 
 COPY ./scripts/* /usr/local/bin/
 RUN chmod +x /usr/local/bin/*
