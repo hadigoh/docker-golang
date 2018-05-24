@@ -30,8 +30,6 @@ RUN go get -u -v \
     github.com/mikefarah/yq \
     github.com/hadigoh/lab
 
-RUN echo alias git=lab >> ~/.profile
-
 COPY ./scripts/* /usr/local/bin/
 RUN chmod +x /usr/local/bin/*
 RUN git config --global url."git@gitlab.com:".insteadOf "https://gitlab.com/"
