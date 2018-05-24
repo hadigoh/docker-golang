@@ -27,11 +27,11 @@ RUN go get -u -v \
     github.com/vektra/mockery/... \
     github.com/oxequa/realize \
     github.com/motemen/gore \
-    github.com/mikefarah/yq \
+    github.com/hadigoh/yq \
     github.com/hadigoh/lab
 
-RUN go get -u -v \
-    github.com/hadigoh/yq
+RUN go clean -cache && \
+    rm -rf /go/pkg/*
 
 COPY ./scripts/* /usr/local/bin/
 RUN chmod +x /usr/local/bin/*
